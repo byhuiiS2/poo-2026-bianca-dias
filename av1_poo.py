@@ -38,7 +38,6 @@ class Desenvolvedor(Funcionario):
             return self.get_salario_base()
 
 
-# Instanciação dos funcionários
 gerente = Gerente(
     "Carlos",
     "G001",
@@ -54,15 +53,12 @@ desenvolvedor = Desenvolvedor(
 )
 
 
-# Tentativa de alterar diretamente o atributo privado
 gerente.__salario_base = -100
 
-# Demonstração de que o salário protegido não foi alterado
 print("Salário base do gerente após tentativa de alteração direta:")
 print(f"R$ {gerente.get_salario_base():.2f}")
 
 
-# Exibição dos salários finais
 print("\n--- Folha de Pagamento ---")
 
 print(f"Nome: {gerente.nome}")
